@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Product>
+
+@foreach (Product p in Model)
+{
+        <div>
+            <p>---------------</p>
+            <p><a href="https://localhost:7064/Products/Details" id="@p.Id">@p.Name</a></p>
+            <p>@p.Price</p>
+            <p>@p.Catagory</p>
+        </div>
+}
